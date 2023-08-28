@@ -22,7 +22,7 @@ javac faseLexica.java
 java faseLexica [ARCHIVO_DE_ENTRADA] [ARCHIVO_DE_SALIDA]
 ```
 
-Reemplaza `[ARCHIVO_DE_ENTRADA]` con la ruta al archivo que deseas analizar y `[ARCHIVO_DE_SALIDA]` con la ruta donde deseas guardar los resultados del análisis.
+Reemplaza **[ARCHIVO_DE_ENTRADA]** con la ruta al archivo que deseas analizar y **[ARCHIVO_DE_SALIDA]** con la ruta donde deseas guardar los resultados del análisis.
 
 ## Resultados
 
@@ -38,7 +38,7 @@ Si se encuentra algún token no reconocido o algún error léxico en una línea,
 
 ## Tabla de simbolos
 
-El programa también mantiene una tabla de símbolos para almacenar identificadores encontrados en el código. Los identificadores se agregan a la tabla de símbolos junto con su valor (inicialmente `null`). Si se encuentra el token de asignación (`=`), el programa actualiza el valor del último identificador agregado en la tabla.
+El programa también mantiene una tabla de símbolos para almacenar identificadores encontrados en el código. Los identificadores se agregan a la tabla de símbolos junto con su valor (inicialmente **null**). Si se encuentra el token de asignación (**=**), el programa actualiza el valor del último identificador agregado en la tabla.
 
 ¡Disfruta utilizando el programa para analizar tus líneas de código y entender la fase léxica del proceso de compilación! Si tienes preguntas o sugerencias, no dudes en ponerte en contacto conmigo.
 
