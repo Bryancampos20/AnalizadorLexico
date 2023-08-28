@@ -1,0 +1,6 @@
+Error [Fase Léxica]: La línea 1 contiene un error, lexema no reconocido: $
+Token: ;, Tipo: PUNTO_COMA
+Error [Fase Léxica]: La línea 2 contiene un error, lexema no reconocido: #
+Token: ;, Tipo: PUNTO_COMA
+Error [Fase Léxica]: La línea 3 contiene un error, lexema no reconocido: @
+Token: ;, Tipo: PUNTO_COMA
