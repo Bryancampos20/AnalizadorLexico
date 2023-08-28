@@ -19,17 +19,15 @@ public class faseLexica {
             String linea;
             int numeroDeLinea = 1;
 
-            // Crear un FileWriter para escribir en el archivo de salida
             FileWriter fileWriter = new FileWriter(archivoSalida);
 
             while ((linea = reader.readLine()) != null) {
             String resultado = tokenizarLinea(linea, numeroDeLinea);
-            //System.out.println(resultado); // Imprimir en la consola
             fileWriter.write(resultado);
             numeroDeLinea++;
         }
             reader.close();
-            fileWriter.close(); // Cerrar el archivo de salida
+            fileWriter.close(); 
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -52,12 +50,10 @@ public class faseLexica {
             } else if (token.matches("[a-zA-Z]+")) {
                 resultado.append("Token: " + token + ", Tipo: IDENTIFICADOR\n");
 
-                // Agregar a la tabla de símbolos
                 tablaDeSimbolos.put(token, null);
             } else if (token.equals("=")) {
                 resultado.append("Token: " + token + ", Tipo: ASIGNACION\n");
 
-                // Actualizar el valor del último identificador agregado
                 if (!tablaDeSimbolos.isEmpty()) {
                     String ultimoIdentificador = tablaDeSimbolos.keySet().iterator().next();
                     tablaDeSimbolos.put(ultimoIdentificador, null);
